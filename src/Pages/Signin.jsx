@@ -39,8 +39,8 @@ const Signin = () => {
       // ✅This saves the user email in sessionStorage so it can be used elsewhere
       sessionStorage.setItem('isLoggedIn', 'true')
       sessionStorage.setItem('loggedInUserEmail', authenticatedUser.email)
-      navigate('/hero')
       window.location.reload()
+       navigate('/hero')
     } else {
       toast.error('Wrong email or password')
     }
