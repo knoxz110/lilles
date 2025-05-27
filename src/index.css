@@ -185,3 +185,64 @@ button:focus-visible {
     @apply bg-background text-foreground;
   }
 }
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 8px #ffd700, 0 0 16px #ffd700;
+  }
+  50% {
+    box-shadow: 0 0 12px #f7d308, 0 0 24px #f7d308;
+  }
+}
+
+.animate-glow {
+  animation: glow 1.5s ease-in-out infinite;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.8s ease-out forwards;
+}
+
+.animate-fade-in-up-delayed {
+  animation: fade-in-up 0.8s ease-out 0.9s forwards; /* delayed by 0.9s */
+}
+
+@keyframes glow {
+  0%, 100% {
+    box-shadow: 0 0 8px #ffd700, 0 0 16px #ffd700;
+  }
+  50% {
+    box-shadow: 0 0 12px #f7d308, 0 0 24px #f7d308;
+    
+  }
+}
+
+.animate-glow {
+  animation: glow 1.5s ease-in-out infinite;
+}
+
